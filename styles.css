@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+  --first-color: rgb(224, 222, 218);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--first-color);
+  border-radius: 0.2rem;
+
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-image: url("https://imgs.search.brave.com/kiEZLAZxiwpZd5Vai_BK_UgvoHTA6Pv0mwposIPlidw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzk1LzJm/LzU2Lzk1MmY1Njg5/OGVkNTEzMmEyNjQw/N2Y2YTIyYzUyZmU0/LS1yb3V0ZS10cmVr/LmpwZw");
+  background-color: rgba(50, 50, 50, 0.5);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  place-items: center center;
+  font-size: 120%;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  margin: 2rem;
+}
+
+h1 {
+  font-weight: 400;
+  transform: scale(1, 0.8);
+  margin-bottom: 0.4rem;
+}
+
+p {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.inline {
+  width: unset;
+  margin-right: 0.5rem;
+  /* vertical-align: middle; */
+}
+
+input,
+textarea,
+select {
+  margin: 0.8rem 0 0 0;
+  width: 100%;
+  background-color: rgb(17,21, 23);
+  border: 1px solid rgb(54, 67, 73);
+  color: rgb(178, 171, 161);
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+#name, #email {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  min-width: 700px;
+  background: rgba(27, 27, 52, 0.9);
+  padding: 2em;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  justify-content: field-around;
+  margin-bottom: 2rem;
+
+}
+      fieldset:last-of-type {
+        margin-bottom: 0;
+      }
+
+textarea {
+  width: 99.9%;
+}
+
+textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+#submit {
+  background-color: rgb(43, 140, 82);
+  color: var(--first-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+span { 
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  form {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 604px) {
+  .container {
+    max-width: 100%;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+  }
+}
